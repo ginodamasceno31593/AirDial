@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircall Desktop Dialer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dialer-container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-circle">
+                    GD
+                    <div class="logo-dot"></div>
+                </div>
+                <span class="whats-new">What's new?</span>
+            </div>
+            <div class="notification-icon">
+                🎧
+                <div class="notification-badge">!</div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <div class="flag-icon"></div>
+            <input type="text" id="contactInput" class="contact-input" placeholder="Teammate, contact or number">
+        </div>
+
+        <div class="keypad">
+            <button class="keypad-button" data-value="1">
+                <div class="keypad-number">1</div>
+            </button>
+            <button class="keypad-button" data-value="2">
+                <div class="keypad-number">2</div>
+                <div class="keypad-letters">ABC</div>
+            </button>
+            <button class="keypad-button" data-value="3">
+                <div class="keypad-number">3</div>
+                <div class="keypad-letters">DEF</div>
+            </button>
+            <button class="keypad-button" data-value="4">
+                <div class="keypad-number">4</div>
+                <div class="keypad-letters">GHI</div>
+            </button>
+            <button class="keypad-button" data-value="5">
+                <div class="keypad-number">5</div>
+                <div class="keypad-letters">JKL</div>
+            </button>
+            <button class="keypad-button" data-value="6">
+                <div class="keypad-number">6</div>
+                <div class="keypad-letters">MNO</div>
+            </button>
+            <button class="keypad-button" data-value="7">
+                <div class="keypad-number">7</div>
+                <div class="keypad-letters">PQRS</div>
+            </button>
+            <button class="keypad-button" data-value="8">
+                <div class="keypad-number">8</div>
+                <div class="keypad-letters">TUV</div>
+            </button>
+            <button class="keypad-button" data-value="9">
+                <div class="keypad-number">9</div>
+                <div class="keypad-letters">WXYZ</div>
+            </button>
+            <button class="keypad-button" data-value="*">
+                <div class="keypad-symbol">*</div>
+            </button>
+            <button class="keypad-button" data-value="0">
+                <div class="keypad-number">0</div>
+            </button>
+            <button class="keypad-button" data-value="#">
+                <div class="keypad-symbol">#</div>
+            </button>
+        </div>
+
+        <div class="action-bar">
+            <button id="clearBtn" class="action-btn clear-btn">Clear</button>
+            <button id="callBtn" class="action-btn call-btn">📞 Call</button>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-label">
+                <div class="flag-icon"></div>
+                <select id="countrySelect" class="country-select">
+                    <option value="US">GD - US-TER-02 - Boca...</option>
+                    <option value="CA">GD - CA-TOR-01 - Toronto...</option>
+                    <option value="UK">GD - UK-LON-01 - London...</option>
+                </select>
+            </div>
+            <div id="formattedNumber" class="contact-number">+1 561 609 1285</div>
+            <div class="action-buttons">
+                <button class="action-button sms-button" id="smsBtn">SMS</button>
+                <button class="action-button mms-button" id="mmsBtn">MMS</button>
+            </div>
+        </div>
+
+        <div id="callStatus" class="call-status hidden">
+            <div class="status-text">Calling...</div>
+            <button id="hangupBtn" class="hangup-btn">End Call</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
